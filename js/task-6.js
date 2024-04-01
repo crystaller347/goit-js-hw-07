@@ -13,7 +13,7 @@ function createBoxes(amount) {
     destroyBoxes();
     let boxSize = 30;
     const allBoxes = [];
-    if (1 <= input.value && input.value <= 100) {
+    if (1 <= amount && amount <= 100) {
       for (let i = 1; i <= amount; i += 1) {
         let box = `<div style="width: ${boxSize}px; height: ${boxSize}px; background-color: ${getRandomHexColor()}"></div>`;
         boxSize += 10;
