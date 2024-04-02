@@ -30,5 +30,5 @@ function destroyBoxes() {
     boxesContainer.innerHTML = "";
 };
 
-buttonCreate.addEventListener("click", function () { createBoxes(input.value) });
+buttonCreate.addEventListener("click", function () { createBoxes(Number(input.value)) });
 buttonDestroy.addEventListener("click", destroyBoxes);
